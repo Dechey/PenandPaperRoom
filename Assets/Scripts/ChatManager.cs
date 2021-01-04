@@ -1,13 +1,8 @@
 ﻿using ExitGames.Client.Photon;
-using ExitGames.Demos.DemoPunVoice;
 using Photon.Chat;
 using Photon.Pun;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ChatManager : MonoBehaviour, IChatClientListener

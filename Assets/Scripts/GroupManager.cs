@@ -1,9 +1,4 @@
-﻿using ExitGames.Client.Photon.StructWrapping;
-using Photon.Chat;
-using Photon.Pun;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.UIElements;
+﻿using Photon.Pun;
 using UnityEngine;
 
 public class GroupManager : MonoBehaviour//, Photon.Pun.IPunObservable
