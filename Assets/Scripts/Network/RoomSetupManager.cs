@@ -6,17 +6,23 @@ using System.IO;
 
 public class RoomSetupManager : MonoBehaviour
 {
+    [SerializeField]
+    private GroupManager groupManager;
+    [SerializeField]
+    private GameObject voice;
+
     public void Start()
     {
-        CreateUser();
+        if (PhotonNetwork.InRoom)
+        {
+            CreateUser();
+            voice.SetActive(true);
+        }
     }
 
     private void CreateUser()
     {
-        if (PhotonNetwork.IsConnected)
-        {
-            Debug.Log("Creating User");
-            PhotonNetwork.Instantiate(Path.Combine("Prefabs", "User"), Vector3.zero, Quaternion.identity);
-        }
+        PhotonNetwork.Instantiate(Path.Combine("Prefabs", "User"), Vector3.zero, Quaternion.identity);
+        groupManager.SetUpGroups();
     }
 }

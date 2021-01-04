@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - User
+  - Voice
+  - GroupManager
+  - ChatManager
+  - ChatInputField
+  - ChatText
+  - ChatPanel
+  - ChatChannels
   layers:
   - Default
   - TransparentFX

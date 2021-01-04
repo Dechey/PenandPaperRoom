@@ -10,9 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 5908263613789927088}
   - component: {fileID: 5908263613789927089}
+  - component: {fileID: 311839908310331124}
+  - component: {fileID: 6872952718304202653}
   m_Layer: 0
   m_Name: User
-  m_TagString: Untagged
+  m_TagString: User
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54,6 +56,37 @@ MonoBehaviour:
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &311839908310331124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5908263613789927052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f0ad7e429a975649a9a286f90f82e4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  voice: {fileID: 0}
+  userNr: 0
+--- !u!114 &6872952718304202653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5908263613789927052}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9d5896f84dc0fa4da9daad37fe66c52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  userID: 
+  chatPanel: {fileID: 3622477055183545117, guid: 365df8f53fee9c0429c318abffcf8b83,
+    type: 3}
+  currentChannelText: {fileID: 0}
+  inputFieldChat: {fileID: 0}
 --- !u!1 &5908263614155581969
 GameObject:
   m_ObjectHideFlags: 0

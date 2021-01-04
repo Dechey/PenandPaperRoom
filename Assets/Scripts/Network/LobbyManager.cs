@@ -42,4 +42,9 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         PhotonNetwork.JoinRoom(roomName.text);
         Debug.Log("Joined to " + roomName.text);
     }
+
+    public int GetRoomSize()
+    {
+        return roomSize;
+    }
 }

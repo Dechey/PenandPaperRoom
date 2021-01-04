@@ -33,7 +33,5 @@ public class RoomManager : MonoBehaviourPunCallbacks
             Debug.Log("Starting Room");
             PhotonNetwork.LoadLevel(multiplayerSceneIndex);
         }
-        Debug.Log("Creating User");
-        PhotonNetwork.Instantiate(Path.Combine("Prefabs", "User"), Vector3.zero, Quaternion.identity);
     }
 }
